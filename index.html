@@ -280,7 +280,7 @@
 
       <div class="container">
         <div class="section-title text-center">
-          <h2>journal</h2>
+          <h2>Journal</h2>
         </div>
       </div>
 
@@ -342,68 +342,29 @@
 
     </div><!-- End Journal Section -->
 
+
     <!-- ======= Contact Section ======= -->
     <div id="contact" class="paddsection">
       <div class="container">
         <div class="contact-block1">
           <div class="row">
 
-            <div class="col-lg-6">
-              <div class="contact-contact">
+            <div class="col-lg">
+              <!-- <div class="contact-contact"> -->
+                <div class="section-title text-center">
+                  <h2 class="">CONNECT</h2>
+                </div>
 
-                <h2 class="mb-30">CONNECT WITH ME</h2>
-
-                <ul class="contact-details">
-                  <li><span>@dolan_digital_solutions (IG)</span></li>
-                  <li><span>linkedin/chelseydolan</span></li>
-
-                  <li><span>dolandigitalsolutions@gmail.com</span></li>
-                </ul>
+                  <ul class="contact-details text-center">
+                    <li><span>@dolan_digital_solutions (IG)</span></li>
+                    <li><span>linkedin/chelseydolan</span></li>
+                    <li><span>dolandigitalsolutions@gmail.com</span></li>
+                  </ul>
 
               </div>
             </div>
 
-            <!-- <div class="col-lg-6">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="row gy-3">
 
-                  <div class="col-lg-6">
-                    <div class="form-group contact-block1">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-6">
-                    <div class="form-group">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-12">
-                    <div class="form-group">
-                      <textarea class="form-control" name="message" placeholder="Message" required></textarea>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-12">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-
-                  <div class="mt-0">
-                    <input type="submit" class="btn btn-defeault btn-send" value="Send message">
-                  </div>
-
-                </div>
-              </form>
-            </div> -->
           </div>
         </div>
       </div>
@@ -425,7 +386,8 @@
 
       </div>
 
-      <p>&copy; Copyrights Folio. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Copyrights Folio. All rights reserved.</p>
+
 
       <div class="credits">
         <!--
@@ -434,7 +396,7 @@
         Licensing information: https://bootstrapmade.com/license/
         Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Folio
       -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Thank you to <a href="https://bootstrapmade.com/">BootstrapMade!</a>
       </div>
 
     </div>
@@ -452,6 +414,16 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Script for updating year dynamically -->
+  <script>
+    function getCurrentYear() {
+      return new Date().getFullYear(); // returns the year via local timing
+    };
+
+    document.getElementById("year").innerHTML = getCurrentYear();
+    //changing the inner html of the span with "year" id to the given year
+  </script>
 
 </body>
 
